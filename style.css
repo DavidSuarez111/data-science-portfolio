@@ -204,7 +204,31 @@ img, video { max-width: 100%; display: block; }
   gap: 12px;
   flex-wrap: wrap;
 }
+/* about experimental*/
+.about-content {
+  display: flex;
+  align-items: flex-start;  /* alinea arriba texto y video */
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;          /* hace que en pantallas pequeñas se acomode en columnas */
+}
 
+.text-wrap {
+  flex: 1 1 55%;   /* ocupa ~55% del ancho */
+}
+
+.video-wrap {
+  flex: 1 1 40%;   /* ocupa ~40% del ancho */
+  display: flex;
+  justify-content: center;
+}
+
+.video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
 /* =========
    About
    ========= */

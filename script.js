@@ -148,6 +148,12 @@ function setLanguage(lang) {
 
   document.getElementById("footer_text").innerHTML = `© <span id="year"></span> ${t.footer_text}`;
   document.getElementById("year").textContent = new Date().getFullYear();
+  
+  if (lang === "es") {
+    setVideoLanguage("es");
+  } else if (lang === "en") {
+    setVideoLanguage("en");
+  }
 
   localStorage.setItem("lang", lang);
 }
@@ -216,6 +222,23 @@ langBtn.addEventListener("click", () => {
   setLanguage(current);
   actualizarHeroLang();
 });
+
+// about experimental //
+function setVideoLanguage(lang) {
+  const videoSource = document.getElementById("about_video_source");
+  const video = document.getElementById("about_video");
+
+  if (lang === "es") {
+    videoSource.src = "assets/es-1.mp4";
+  } else if (lang === "en") {
+    videoSource.src = "assets/en-1.mp4";
+  }
+
+  video.load();
+}
+
+const userLang = navigator.language.startsWith("es") ? "es" : "en";
+setVideoLanguage(userLang);
 
 // inicializar fotos //
 window.onload = mostrarFoto;
