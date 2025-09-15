@@ -257,8 +257,46 @@ img, video { max-width: 100%; display: block; }
 @media (min-width: 720px) {
   .bullet-grid { grid-template-columns: 1fr 1fr; }
 }
+/* bullets-png : Experimental */
+ul.bullets-png {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+ul.bullets-png li {
+  position: relative;
+  padding-left: 32px; /* espacio para el ícono */
+  margin: 10px 0;
+}
 
+ul.bullets-png li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;   /* ajusta tamaño del ícono */
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+ul.bullets-png li.biotech::before {
+  background-image: url("assets/biotech.png");
+}
+
+ul.bullets-png li.nlp-ml::before {
+  background-image: url("assets/data.png");
+}
+
+ul.bullets-png li.web::before {
+  background-image: url("assets/website.png");
+}
+
+ul.bullets-png li.kefir::before {
+  background-image: url("assets/kefir.png");
+}
 /* =========
    Projects
    ========= */

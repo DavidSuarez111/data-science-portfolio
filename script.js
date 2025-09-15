@@ -17,6 +17,10 @@ const translations = {
     hero_cta_contact: "Contact me",
     about_title: "About me",
     about_text: "Over 9 years, I delved deep into biological sciences, from molecular biotechnology to immunology and transcriptomics. This path led me to found Vida en bebida, a company promoting probiotic superfoods with positive health impact. In the last 3 years, I expanded my profile to programming and data management, exploring how technology can amplify both research and business. Today, I seek to drive projects where data, technology, and/or science converge to generate innovative impact.",
+    about_1: "Biotech", 
+    about_2: "NLP and ML", 
+    about_3: "Web design", 
+    about_4: "Kefir enthusiast", 
     projects_title: "Featured Projects",
     project1_title: "Sentiment Analysis of Movie Reviews for Junky Union",
     project1_desc: "Developed a natural language processing model (LR + BERT) with 88% accuracy in detecting positive or negative tone in movie reviews, eliminating the need to read reviews to understand audience sentiment.",
@@ -64,6 +68,10 @@ const translations = {
     hero_cta_contact: "Contáctame",
     about_title: "Sobre mí",
     about_text: "Durante 9 años profundicé en las ciencias biológicas, desde la biotecnología molecular hasta la inmunología y la transcriptómica. Ese camino me llevó a fundar Vida en bebida, una empresa que promueve superalimentos probióticos con impacto positivo en la salud. Desde hace 3 años expandí mi perfil hacia la programación y el manejo de datos, explorando cómo la tecnología puede amplificar tanto la investigación como los negocios. Hoy busco impulsar proyectos en donde datos, tecnología y/o ciencia converjan para generar innovación con impacto.",
+    about_1: "BioTec", 
+    about_2: "NLP y ML", 
+    about_3: "Diseño Web", 
+    about_4: "Entusiasta en Kefir",
     projects_title: "Proyectos Selectos",
     project1_title: "Análisis de Sentimientos de Reseñas de Películas para Junky Union",
     project1_desc: "Elaboré un modelo de análisis de lenguaje natural (LR + BERT) con 88% de asertividad en detectar el tono positivo o negativo en reseñas de películas eliminando la necesidad de leer las reseñas para entender como se sienten los espectadores.",
@@ -114,6 +122,10 @@ function setLanguage(lang) {
 
   document.getElementById("about_title").textContent = t.about_title;
   document.getElementById("about_text").textContent = t.about_text;
+  document.getElementById("about_1").textContent = t.about_1;
+  document.getElementById("about_2").textContent = t.about_2;
+  document.getElementById("about_3").textContent = t.about_3;
+  document.getElementById("about_4").textContent = t.about_4;
 
   document.getElementById("projects_title").textContent = t.projects_title;
   document.getElementById("project1_title").textContent = t.project1_title;
