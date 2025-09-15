@@ -51,7 +51,7 @@ const translations = {
     contact_email_placeholder: "you@example.com",
     contact_message_placeholder: "Tell me about your project...",
     contact_send: "Send",
-    footer_text: "David Suárez — Built with care."
+    footer_text: "David Suárez — Built with Awareness."
   },
   es: {
     nav_about: "Sobre mí",
@@ -102,7 +102,7 @@ const translations = {
     contact_email_placeholder: "tu@correo.com",
     contact_message_placeholder: "Cuéntame sobre tu proyecto...",
     contact_send: "Enviar",
-    footer_text: "David Suárez — Construido con detalle."
+    footer_text: "David Suárez — Construido a consciencia."
   }
 };
 
